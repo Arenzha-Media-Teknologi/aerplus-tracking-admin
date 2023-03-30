@@ -1,3 +1,4 @@
+import 'package:admin/assets/colors.dart';
 import 'package:admin/pages/splash/splash.dart';
 import 'package:admin/pages/track/track.dart';
 
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
   // @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Aer Plus",
+      color: baseColor,
+      title: "Aerplus Admin",
       checkerboardOffscreenLayers: false,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFF15202B),
       ),
       themeMode: ThemeMode.system,
-      home: TrackingAdmin(),
+      home: SplassPage(),
     );
   }
 }
